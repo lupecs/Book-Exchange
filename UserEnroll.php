@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>User Enrollment</title>
+    <link href="UserEnroll.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <p align="center">User Enroll</p>
+    <div align="center">
     <form action="UserInsert.php" method="post">
-        <table align="center">
+    <img src="images/brand_horizontal_logo_4color.png" alt="Cal State LA" id="pic1" align="center;">
+        <table>
             <tr>
-                <td>User Name</td>
-                <td><input type="text" name="name"/></td>
+                <td><h2 id="title" align="center">User Enroll</h2id></td>
             </tr>
             <tr>
-                <td>Email</td>
-                <td><input type="text" name="email"/></td>
+                <td align="center">USERNAME: <input type="text" name="name" id="text1"/></td>
             </tr>
             <tr>
-                <td><input type="submit" value="submit" /></td>
+                <td align="center">EMAIL: <input type="text" name="email" id="text2"/></td>
             </tr>
-    
+            <tr>
+                <td align="center"><input type="submit" value="REGISTER" id="submit" /></td>
+            </tr>
+            
+            <tr>
+                <td align="center"><p id="adminLink"><a href="/admin.php">BACK TO ADMIN</a></p></td>
+            </tr>
         </table>
-    </form>
-    <p><a href="/admin.php">Back to Admin Table</a></p>
+</form>
+</div>
 </body>
 </html>
